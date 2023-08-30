@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+/* background, body  */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: rgb(255, 178, 89);
+
+    position: relative;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* center box , main div ---------------- */
+.calculator {
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px 30px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+/* output area  */
+textarea {
+    height: 80px;
+    font-size: 35px;
+    background-color: rgba(2, 2, 2, 0.24);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 80px;
+    grid-column: 1/5;
+    overflow: hidden;
+    resize: none;
+}
+
+/* all button  */
+.num {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 18px;
+    background-color: black;
+    border-radius: 35% 10%;
+    transition-duration: .1s;
+}
+
+/* special button  */
+.btn2 {
+    color: #9900ff;
+    font-size: 16px;
+}
+
+/* hover effects ------------------------------------------- */
+.num:hover {
+    background-color: #9900ff;
+}
+
+.btn2:hover {
+    background-color: #9900ff;
+    color: white;
+}
+
+/* responsiveness / media queries -------------------- */
+
+@media (width< 460px) {
+
+    html,
+    body {
+        background-color: black;
+    }
+
+    .calculator {
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        padding: 0px 10px 10px 10px;
+        gap: 0px 0px;
+    }
+
+    .num {
+        margin: 2vw 4vw;
+    }
+
+    textarea {
+        height: 35vh;
+        padding-top: 20vh;
+        background-color: transparent;
+        color: white;
+        place-content: center;
+    }
+
+}
