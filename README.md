@@ -1,6 +1,6 @@
-# CodSoft Web Task 2 | Calculator Web App
+# CodSoft Web Task 2 Calculator Web Task 2 | Calculator Web App
 
-I'm thrilled to share the completion of the 4th task of my Let's Grow More Web Development Internship - a Basic Calculator Web App. This app allows users to perform simple calculations right in their browser.
+I'm thrilled to share the completion of the 2nd task of my CodSoft Web Development Internship - a Basic Calculator Web App. This app allows users to perform simple calculations right in their browser.
 
 **Features:**
 - User-friendly calculator interface.
